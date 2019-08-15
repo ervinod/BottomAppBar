@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".fragment.HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/profile_gray"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Let's Talk..."
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/post_round_white"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:inputType="textMultiLine"
+            android:textSize="14dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/no_post"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:textColor="@color/lightblack"
+        android:layout_gravity="center_horizontal"
+        android:text="No Post Available"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_find_relation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/fab_bg_gradient"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:text="Find Relations"/>
+
+</LinearLayout>

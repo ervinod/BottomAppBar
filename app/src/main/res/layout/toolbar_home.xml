@@ -1,0 +1,61 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/canvas_toolbar_bg"
+    android:fitsSystemWindows="true"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:layout_scrollFlags="enterAlways"
+    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvToolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:layout_marginStart="20dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" />
+
+                <SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/black"
+                    android:layout_toLeftOf="@+id/ivProfile"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"/>
+
+
+                <ImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/black"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/profile_gray"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7sp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_color" />
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>
